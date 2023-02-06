@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        font-family: arial;
+      }
+    </style>
+
+    <title>Calculate area of a Rectangle</title>
+  </head>
+
+  <body>
+    <h1>Rectangle Calculator</h1>
+    <h3>Use the fields below to set your height and width in meters.</h3>
+    <p>Input Height(m):</p>
+    <input id="input-height" type="number" placeholder="height" />
+
+    <p>Input Width(m):</p>
+    <input id="input-width" type="number" placeholder="width" />
+
+    <button onclick="dimensionsAlert()">Submit</button>
+    <p>Result:</p>
+    <div id="result"></div>
+
+    <script>
+      function dimensionsAlert() {
+        let inputHeight = document.getElementById("input-height").value;
+        let inputWidth = document.getElementById("input-width").value;
+        result.innerHTML = inputHeight * inputWidth + " m2";
+      }
+    </script>
+  </body>
+</html>

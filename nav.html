@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .nav-bar {
+        box-sizing: border-box;
+        max-width: 960px;
+        display: flex;
+        justify-content: space-around;
+        padding: 1em;
+        list-style-type: none;
+        background-color: #fbd433;
+        font-weight: bold;
+
+        text-transform: uppercase;
+        font-family: "Source Sans Pro", sans;
+      }
+      .nav-link a {
+        text-decoration: none;
+        color: #1a1347;
+        padding-block: 0.5em;
+        padding-inline: 1em;
+      }
+      .nav-link:hover a {
+        color: #fff;
+        background-color: #1a1347;
+      }
+      .nav-link {
+        cursor: pointer;
+      }
+      .nav-link:last-child a {
+        background-color: #1a1347;
+        padding-inline: 1em;
+      }
+      .nav-link:last-child a {
+        color: #fff;
+      }
+      .nav-link:last-child a:hover {
+        text-decoration: underline;
+      }
+
+      @media screen and (max-width: 650px) {
+        .nav-bar {
+          flex-direction: column;
+          row-gap: 1.5em;
+          text-align: center;
+        }
+        .nav-link:last-child {
+          padding-bottom: 0.75em;
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="nav-bar-container">
+      <ul class="nav-bar">
+        <li class="nav-link">
+          <a href="https://www.bristolsu.org.uk/election-nominations-2023"
+            >About</a
+          >
+        </li>
+        <li class="nav-link">
+          <a
+            href="https://www.bristolsu.org.uk/election-nominations-2023#who-section"
+            >Get&nbsp;Involved</a
+          >
+        </li>
+        <li class="nav-link">
+          <a href="https://www.bristolsu.org.uk/election-roles-2023">Roles</a>
+        </li>
+        <li class="nav-link">
+          <a
+            href="https://nusdigital.s3.amazonaws.com/document/documents/100296/52b0abc901a42a7a98e843aabbd006c8/election-rules-tb2-2023.pdf"
+            >Rules</a
+          >
+        </li>
+        <li class="nav-link"><a href="#faqs">FAQs</a></li>
+        <li class="nav-link">
+          <a href="https://www.bristolsu.org.uk/user_groups/my_nominations"
+            >Just&nbsp;let&nbsp;me&nbsp;run!</a
+          >
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      function tempConversion(c = 0) {
+        return (c * 9) / 5 + 32 + " degrees F";
+      }
+    </script>
+    <title>Functions</title>
+  </head>
+  <body>
+    <input
+      type="button"
+      id="10"
+      name="Button 10"
+      value="10 degrees C"
+      onclick="alert('= ' + tempConversion(this.id))"
+    />
+    <input
+      type="button"
+      id="20"
+      name="Button 20"
+      value="20 degrees C"
+      onclick="alert('= ' + tempConversion(this.id))"
+    />
+    <input
+      type="button"
+      id="30"
+      name="Button 30"
+      value="30 degrees C"
+      onclick="alert('= ' + tempConversion(this.id))"
+    />
+    <input
+      type="button"
+      id="0"
+      name="Button 0"
+      value="0 degrees C"
+      onclick="alert(tempConversion())"
+    />
+  </body>
+</html>
