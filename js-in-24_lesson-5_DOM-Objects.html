@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
       * {
-        font-family: arial;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
       }
     </style>
 
@@ -14,7 +16,10 @@
   </head>
 
   <body>
-    <h1>Rectangle Calculator</h1>
+    <button onclick="pageBack()">Back</button>
+
+    <button onclick="pageForward()">Forward</button>
+    <!-- <h1>Rectangle Calculator</h1>
     <h3>Use the fields below to set your height and width in meters.</h3>
     <p>Input Height(m):</p>
     <input id="input-height" type="number" placeholder="height" />
@@ -24,13 +29,21 @@
 
     <button onclick="dimensionsAlert()">Submit</button>
     <p>Result:</p>
-    <div id="result"></div>
+    <div id="result"></div> -->
 
     <script>
-      function dimensionsAlert() {
-        let inputHeight = document.getElementById("input-height").value;
-        let inputWidth = document.getElementById("input-width").value;
-        result.innerHTML = inputHeight * inputWidth + " m2";
+      // function dimensionsAlert() {
+      //   let inputHeight = document.getElementById("input-height").value;
+      //   let inputWidth = document.getElementById("input-width").value;
+      //   result.innerHTML = inputHeight * inputWidth + " m2";
+      // }
+
+      function pageBack() {
+        history.back();
+      }
+
+      function pageForward() {
+        history.forward();
       }
     </script>
   </body>
