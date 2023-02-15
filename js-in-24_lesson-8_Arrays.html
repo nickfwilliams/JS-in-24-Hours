@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+    </style>
+        <script>
+          function wrangleArray() {
+            const sentence = "Javascript is a really cool language";
+            const newSentence = "";
+            //Write it out
+            document.getElementById("div1").innerHTML = "<p>" + sentence + "</p>";
+            //Convert to array
+            const words = sentence.split(" ");
+            //Remove 'Really' and 'Cool' and add 'Powerful' instead
+            const message = words.splice(3,2,"powerful");
+            //Use an alert to say what words were removed
+            alert('Removed words: ' + message);
+            //Convert the array to a string and write it out
+            document.getElementById("div2").innerHTML = "<p>" + words.join(" ") + "</p>";
+          }
+        </script>
+    <title>Strings and Arrays</title>
+  </head>
+
+  <body>
+<div id="div1"></div>
+<div id="div2"></div>
+<script>wrangleArray();</script>
+  </body>
+</html>
