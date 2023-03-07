@@ -12,8 +12,33 @@
 			}
 		</style>
 
+		<script>
+			window.onload = function () {
+				var go = document.getElementById("a1");
+				var noGo = document.getElementById("a2");
+
+				function permitAccess() {
+					alert("Go right ahead - have fun!");
+				}
+
+				function refuseAccess(e) {
+					alert("Sorry, but you're not yet authorised to follow this link.");
+					e.preventDefault();
+				}
+
+				go.addEventListener("click", permitAccess);
+				noGo.addEventListener("click", refuseAccess);
+			};
+		</script>
+
 		<title>Preventing Default Action</title>
 	</head>
 
-	<body></body>
+	<body>
+		<a href="https://www.google.com" target="_blank" id="a1">Go to Google</a
+		><br />
+		<a href="https://www.google.com" target="_blank" id="a2"
+			>DO NOT go to Google</a
+		>
+	</body>
 </html>
